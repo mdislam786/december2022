@@ -21,7 +21,7 @@ public class LoginPageTest extends TestBase{
 	@Test
 	public void loginTest() throws Throwable {
 		loginPageObj.enterUserName("demo@techfios.com");
-		loginPageObj.enterPassword("558566");
+		loginPageObj.enterPassword("abc123");
 		loginPageObj.clickSignInButton();
 		takeScreenshot(driver);		
 	}
@@ -29,7 +29,7 @@ public class LoginPageTest extends TestBase{
 	@Test
 	public void pageTitleTest() throws Throwable {
 		loginPageObj.enterUserName("demo@techfios.com");
-		loginPageObj.enterPassword("558566");
+		loginPageObj.enterPassword("abc123");
 		loginPageObj.clickSignInButton();
 		String expectedTitle = "Dashboard- iBilling";
 		String actualTitle = loginPageObj.getPageTitle();
